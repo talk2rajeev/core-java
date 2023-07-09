@@ -22,10 +22,11 @@ public class ThreadConstructor {
         MyRunnableThread mth1 = new MyRunnableThread();
         Thread th1 = new Thread(mth1, "Rajeev");
 
+        t1.setPriority(Thread.MIN_PRIORITY);
+        th1.setPriority(Thread.MAX_PRIORITY);
+
         t1.start();
-        System.out.println(t1.getName());
         th1.start();
-        System.out.println(th1.getName());
 
     }
 
